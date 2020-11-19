@@ -1,0 +1,32 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <div>
+        <img alt='no covid' height='200' src="../static/covid.svg">
+        <h1>patient has COVID-19</h1>
+        <p>Upon the Ai predictions of your CT scan you have COVID-19 symptoms.</p>
+        <p>Please Isolate yourself and If you feel sick go to a doctor.</p>
+      </div>
+      <div class='analyze'>
+        <button id='go-back-button' class='go-back-button' type='button' onclick='goBack()'>analyze another scan</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
