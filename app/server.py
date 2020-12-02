@@ -9,6 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 from PIL import Image
+import os
 
 export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
 export_file_name = 'export.pkl'
@@ -85,4 +86,4 @@ async def analyze(request):
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:
-        uvicorn.run(app=app, host='0.0.0.0', port=5000, log_level="info")
+        uvicorn.run(app=app, host='0.0.0.0', port=os.environ.get('PORT'), log_level="info")
