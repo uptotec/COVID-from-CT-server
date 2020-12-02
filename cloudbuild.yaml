@@ -20,7 +20,7 @@
    - 'managed'
    - '--port'
    - '5000'
-   - 'memory'
+   - '--memory'
    - '512Mi'
  images:
  - 'gcr.io/$PROJECT_ID/covid-ai:$COMMIT_SHA'
