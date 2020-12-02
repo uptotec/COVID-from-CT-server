@@ -22,5 +22,8 @@
    - '5000'
    - '--memory'
    - '512Mi'
+   - '--timeout'
+   - '30m0s'
+   - '--allow-unauthenticated'
  images:
  - 'gcr.io/$PROJECT_ID/covid-ai:$COMMIT_SHA'
