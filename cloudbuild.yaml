@@ -19,6 +19,6 @@
    - '--platform'
    - 'managed'
    - '--port'
-   - 5000
+   - '5000'
  images:
  - 'gcr.io/$PROJECT_ID/covid-ai:$COMMIT_SHA'
